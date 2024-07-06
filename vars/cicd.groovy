@@ -1,9 +1,9 @@
 def gitdownload(repo)
 {
- "https://github.com/intelliqittrainings/${repo}.git"
+ git "https://github.com/intelliqittrainings/${repo}.git"
 }
 
 def buildartifacts()
 {
- sh 'mvn package'
+ sh "mvn package"
 }
