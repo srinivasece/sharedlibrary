@@ -9,9 +9,9 @@ def sub(a,b)
 }
 def mul(a,b)
 {
-  echo "sum of ${a} and ${b} is ${a*b}"
+  echo "product of ${a} and ${b} is ${a*b}"
 }
 def div(a,b)
 {
-  echo "sum of ${a} and ${b} is ${a+/b}"
+  echo "division of ${a} and ${b} is ${a/b}"
 }
