@@ -7,3 +7,7 @@ def buildartifacts()
 {
  sh "mvn package"
 }
+def deploy(jobname,ipaddress,contextpath)
+{
+ sh "scp /var/lib/jenkins/workspace/${jobname}/target/webapp.war ubuntu@${ipaddress}:/var/lib/tomcat9/webapps/${contectpath}.war"
+}
