@@ -9,5 +9,5 @@ def buildartifacts()
 }
 def deploy(jobname,ipaddress,contextpath)
 {
- sh "scp /var/lib/jenkins/workspace/${jobname}/webapp/target/webapp.war ubuntu@${ipaddress}:/var/lib/tomcat9/webapps/${contextpath}.war"
+ sh "/var/lib/jenkins/workspace/${jobname}/webapp/target ubuntu@${ipaddress}:/var/lib/tomcat9/webapps/${contextpath}.war"
 }
